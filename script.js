@@ -9,7 +9,7 @@ const reverseColor = [];
 for (color of colors) {
   reverseColor.unshift(color);
 }
-// console.log(reverseColor);
+console.log(reverseColor);
 
 /////////////////////////////////////////////////////////////////
 
@@ -17,14 +17,16 @@ for (color of colors) {
 Write a JavaScript code to get the even numbers from an array using any looping technique.
 Input: const numbers = [12, 98, 5, 41, 23, 78, 46];
 Output:
-[12, 98, 76, 46]
+[12, 98, 78, 46]
 */
 const numbers = [12, 98, 5, 41, 23, 78, 46];
+const evenArray = [];
 for (even of numbers) {
   if (even % 2 === 0) {
-    // console.log(even);
+    evenArray.push(even);
   }
 }
+console.log(evenArray);
 
 //////////////////////////////////////////////////
 
@@ -39,7 +41,7 @@ let nameString = "";
 for (name of names) {
   nameString += name;
 }
-// console.log(nameString);
+console.log(nameString);
 
 /////////////////////////////////////////////////////////
 
@@ -55,7 +57,7 @@ let reverseWord = "";
 for (let word = splitStatement.length - 1; word >= 0; word--) {
   reverseWord += " " + splitStatement[word];
 }
-// console.log(reverseWord.trim());
+console.log(reverseWord.trim());
 
 ////////////////////////////////////////////////////////
 
@@ -70,7 +72,7 @@ let copyArray = [1, 2, 3];
 for (num of copyArray) {
   copyArray[0] = 99;
 }
-// console.log(copyArray);
+console.log(copyArray);
 
 /////////////////////////////////////////////////////////
 
@@ -80,7 +82,7 @@ Given an array of student objects, print each student’s name and marks.
   { name: "John", marks: 85 },
   { name: "Alice", marks: 90 }
 ]
-Expected ooutput:
+Expected output:
 John scored 85
 Alice scored 90
 */
@@ -91,8 +93,8 @@ let students = [
 ];
 const firstStd = students[0].name + " " + "scored" + " " + students[0].marks;
 const secondStd = students[1].name + " " + "scored" + " " + students[1].marks;
-// console.log(firstStd);
-// console.log(secondStd);
+console.log(firstStd);
+console.log(secondStd);
 
 /////////////////////////////////////////////////////////////
 
@@ -111,3 +113,12 @@ Expected Array:
   [5, 6]
 ]
 */
+
+let nestedArray = [
+  [1, 2],
+  [3, 4],
+  [5, 6],
+];
+let secondRow = nestedArray[1];
+secondRow[0] = 99;
+console.log(nestedArray);
