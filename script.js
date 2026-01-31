@@ -65,6 +65,14 @@ Input: [1, 2, 3]
 Expected Output:
 Original: [1, 2, 3] Copy: [99, 2, 3]
 */
+let mainArray = [1, 2, 3];
+let copyArray = [1, 2, 3];
+for (num of copyArray) {
+  copyArray[0] = 99;
+}
+// console.log(copyArray);
+
+/////////////////////////////////////////////////////////
 
 /*Task 6
 Given an array of student objects, print each student’s name and marks.
@@ -76,6 +84,17 @@ Expected ooutput:
 John scored 85
 Alice scored 90
 */
+
+let students = [
+  { name: "John", marks: 85 },
+  { name: "Alice", marks: 90 },
+];
+const firstStd = students[0].name + " " + "scored" + " " + students[0].marks;
+const secondStd = students[1].name + " " + "scored" + " " + students[1].marks;
+// console.log(firstStd);
+// console.log(secondStd);
+
+/////////////////////////////////////////////////////////////
 
 /*Task 7
 Given a 2D array, update the value at second row first item to 99 and print the updated array.
