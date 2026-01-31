@@ -11,12 +11,22 @@ for (color of colors) {
 }
 // console.log(reverseColor);
 
+/////////////////////////////////////////////////////////////////
+
 /*Task 2
 Write a JavaScript code to get the even numbers from an array using any looping technique.
 Input: const numbers = [12, 98, 5, 41, 23, 78, 46];
 Output:
 [12, 98, 76, 46]
 */
+const numbers = [12, 98, 5, 41, 23, 78, 46];
+for (even of numbers) {
+  if (even % 2 === 0) {
+    // console.log(even);
+  }
+}
+
+//////////////////////////////////////////////////
 
 /*Task 3
 Use a for...of loop to concatenate all the elements of an array into a single string.
@@ -24,6 +34,14 @@ Input: var numbers = ['Tom', 'Tim', 'Tin', 'Tik']
 Output:
 'TomTimTinTik'
 */
+let names = ["Tom", "Tim", "Tin", "Tik"];
+let nameString = "";
+for (name of names) {
+  nameString += name;
+}
+// console.log(nameString);
+
+/////////////////////////////////////////////////////////
 
 /*Task 4 (Hard)
 Reverse the words of a sentence. Only the position of the word will be reversed. check out the output
@@ -31,6 +49,15 @@ Input: const statement = 'I am a hard working person'
 Output:
 'person working hard a am I'
 */
+const statement = "I am a hard working person";
+const splitStatement = statement.split(" ");
+let reverseWord = "";
+for (let word = splitStatement.length - 1; word >= 0; word--) {
+  reverseWord += " " + splitStatement[word];
+}
+// console.log(reverseWord.trim());
+
+////////////////////////////////////////////////////////
 
 /*Task 5
 Copy the given array into another array so that changing the copy does not affect the original.Change the first element of the copied array to 99.
